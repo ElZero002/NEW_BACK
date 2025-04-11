@@ -63,7 +63,7 @@ export class ProductsController {
   }
 
   @Patch(':id')
-  partialUpdate(@Param('id') id: number, @Body() body: any) {
+  partialUpdate(@Param('id') id: number, @Body() body) {
     return `Actualización parcial del ítem ${id}`;
   }
 
